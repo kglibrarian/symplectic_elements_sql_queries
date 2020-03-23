@@ -8,6 +8,7 @@ NOTES:
 1. There are two UserID columns. These should match each other. You can delete the second one. 
 2. Multiple Researcher IDs, Scopus Author IDs, Emails, are separated by a semi-colon. 
 3. This report runs in Microsoft SQL Serv 2012 and 2014. 
+4. This report works with the Elements Reporting Database for: 5.19.0.2603 release build. 
 
 WHEN TO USE THIS:
 Use this report when you need a list of pending publications by user and also want to check if the user has unique identifiers. 
