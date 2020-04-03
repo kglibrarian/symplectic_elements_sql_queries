@@ -20,7 +20,7 @@ User ID|Name|Role|Department|School|Pending Book|Pending Chapter|Pending Confere
 3. This report runs in Microsoft SQL Serv 2012 and 2014. 
 4. This report works with the Elements Reporting Database for: 5.19.0.2603 release build. 
 
-WHEN TO USE THIS:
+## WHEN TO USE THIS REPORT:
 Use this report when you need a list of pending publications by user and also want to check if the user has claimed unique identifiers. 
 
 

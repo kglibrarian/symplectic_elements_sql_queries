@@ -13,6 +13,16 @@ Elements Group ID|Elements User ID|Name|Position|Department|School|Employee ID|N
 | 15                | 12               | Jane Doe | Assistant Professor | Surgery    | School of Medicine | 23456       | jdd123 | 89076                   | 20150901       | 10.1111/nmo.12613   | 1350-1925 | Article, Journal                       | 2-s2.0-84939774880 | WOS:000364747900005       | 10.1111/nmo.12613            | 26088614          | MED:26088614                     |
 | 15                | 12               | Jane Doe | Assistant Professor | Surgery    | School of Medicine | 23456       | jdd123 | 12345                   | 20150901       | 10.1111/apt.13324   | 0269-2813 | Review, Journal                        | 2-s2.0-84939562887 | WOS:000359855900002       | 10.1111/apt.13324            | 26177572          | MED:26177572                     |
 
+## NOTES: 
+
+1. There are duplicates in this report. When two or more faculty members co-author a publication, the publication will be listed for each faculty member. 
+2. There are occasionally two Scopus Article IDs for an article in the Reporting database. The first ID is usually for the "Article in Press" and the second ID is usually for the "Published version". This report overwrites the first Scopus Article ID so that only the second Scopus Article ID is displayed in the report. 
+
+## WHEN TO USE THIS REPORT
+
+Use this report when you need a list of unique Article Identfiers (from Scopus, Web of Science, Crossref, PubMed) as they are available in Elements for each faculty member's publications. Faculty members need to be part of a primary or auto group in Elements. 
+
+
 ## CODE BASE:
 ~~~sql
 SELECT * FROM (
