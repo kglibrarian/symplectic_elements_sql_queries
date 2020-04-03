@@ -41,6 +41,7 @@ SELECT * FROM (
 				,p.[doi]
 				,p.[ISSN]
 				,p.[Types]
+				,p.[Type]
 				--,pr.[Publication ID] 'pr Pub ID' 
 				,pr.[Data Source]
 				,pr.[Data Source Proprietary ID]
@@ -58,8 +59,13 @@ SELECT * FROM (
 			ON gum.[User ID] = u.[ID]
 
 		WHERE g.[name] = 'group name'
-			-- example group name from FSM is 'Digestive Health Center'
+			--g.[name] = 'Digiestive Health Center'
+			--g.[id] = 15
 			--AND p.[publication-date] > YYYYMMDD AND p.[publication-date] <= YYYYMMDD
+			--AND p.[publication-date] > 20200101 AND p.[publication-date] <= 20200131
+			--AND p.[ISSN] IN ('1538-3598', '2574-3805', '2380-6591' ) 
+			--AND p.[types] IN ('Article', 'Article in Press', 'Article, Early Access, Journal', 'Article, Journal','Book', 'Case Reports, case-report', 'Chapter', 'Journal', 'Journal Article', 'Letter, Journal', 'Note, Article, Journal', 'Note, Journal', 'other, Journal Article', 'Practice Guideline, Journal Article', 'research-article, Journal Article', 'Review, Book Series', 'Review, Journal', 'review-article, Journal Article', 'review-article, Review, Journal Article', 'Short Survey, Journal')
+
 						
 		) AS t
 
@@ -73,3 +79,4 @@ SELECT * FROM (
 					 [PubMed], 
 					 [Europe PubMed Central])
 			) AS pub_id_pivot_table
+	
