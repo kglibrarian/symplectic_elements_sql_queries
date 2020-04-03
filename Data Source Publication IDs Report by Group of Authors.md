@@ -57,7 +57,8 @@ SELECT * FROM (
 			LEFT JOIN [User] u
 			ON gum.[User ID] = u.[ID]
 
-		WHERE g.[name] = 'Digestive Health Center'
+		WHERE g.[name] = 'group name'
+			-- example group name from FSM is 'Digestive Health Center'
 			--AND p.[publication-date] > YYYYMMDD AND p.[publication-date] <= YYYYMMDD
 						
 		) AS t
