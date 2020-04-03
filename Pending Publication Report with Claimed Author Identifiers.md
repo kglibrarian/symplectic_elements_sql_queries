@@ -91,7 +91,8 @@ LEFT JOIN
 							  FOR XML PATH (''))
 							  , 1, 1, '')  AS ME_String
 					FROM [User Identifier] AS a
-					WHERE a.[Is Claimed] = 1 AND a.[User ID] = '8886'
+					WHERE a.[Is Claimed] = 1 
+					--AND a.[User ID] = '8886'
 					GROUP BY [User ID]
 							,[Is Claimed]
 							,[Identifier Scheme ID]
