@@ -48,7 +48,7 @@ SELECT * FROM	(
 			
 		WHERE u.[Is Current Staff] = 1 
 				 AND u.[Is Academic] = 1
-				-- AND u.[ID] = '8886'
+				--AND u.[ID] = '20592'
 
 		GROUP BY u.[ID]
 				 ,[Computed Name Abbreviated] 
@@ -87,12 +87,14 @@ LEFT JOIN
 						,[Identifier Scheme ID]
 						 ,STUFF(
 							 (SELECT ';' + [Identifier Value] from [User Identifier]
-							  WHERE [User ID] = a.[User ID] AND [Identifier Scheme ID] = a.[Identifier Scheme ID] AND a.[Is Claimed] = 1
+							  WHERE [User ID] = a.[User ID] AND 
+							  [Is Claimed] = 1 AND
+							  [Identifier Scheme ID] = a.[Identifier Scheme ID]  
 							  FOR XML PATH (''))
 							  , 1, 1, '')  AS ME_String
 					FROM [User Identifier] AS a
 					WHERE a.[Is Claimed] = 1 
-					--AND a.[User ID] = '8886'
+						--AND a.[User ID] = '20592'
 					GROUP BY [User ID]
 							,[Is Claimed]
 							,[Identifier Scheme ID]
@@ -113,4 +115,6 @@ LEFT JOIN
 		 ) as final_id_pivot_table2
 		 
  	ON final_pend_pivot_table.[ID] = final_id_pivot_table2.[User ID]
+
+ 
 
