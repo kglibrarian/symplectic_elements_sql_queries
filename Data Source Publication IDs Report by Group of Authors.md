@@ -36,6 +36,8 @@ SELECT * FROM (
 				 ,RIGHT(u.[Department], LEN(u.[Department]) - CHARINDEX(';', u.[Department])) AS 'School'
 				,u.[Proprietary ID] AS 'Employee ID'
 				,u.[Username] AS 'Net ID'
+				,u.[Is Current Staff]
+				,u.[Is Academic]
 				,p.[ID] AS 'Publication ID'
 				,p.[Publication-Date]
 				,p.[doi]
@@ -64,6 +66,8 @@ SELECT * FROM (
 			--AND p.[publication-date] > YYYYMMDD AND p.[publication-date] <= YYYYMMDD
 			--AND p.[publication-date] > 20200101 AND p.[publication-date] <= 20200131
 			--AND p.[ISSN] IN ('1538-3598', '2574-3805', '2380-6591' ) 
+			--AND u.[Is Current Staff] = 1
+			--AND u.[Is Academic] = 1
 			--AND p.[types] IN ('Article', 'Article in Press', 'Article, Early Access, Journal', 'Article, Journal','Book', 'Case Reports, case-report', 'Chapter', 'Journal', 'Journal Article', 'Letter, Journal', 'Note, Article, Journal', 'Note, Journal', 'other, Journal Article', 'Practice Guideline, Journal Article', 'research-article, Journal Article', 'Review, Book Series', 'Review, Journal', 'review-article, Journal Article', 'review-article, Review, Journal Article', 'Short Survey, Journal')
 
 						
