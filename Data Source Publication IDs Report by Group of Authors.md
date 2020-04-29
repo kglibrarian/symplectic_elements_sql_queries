@@ -63,8 +63,8 @@ SELECT * FROM (
 		WHERE g.[name] = 'group name'
 			--g.[name] = 'Digiestive Health Center'
 			--g.[id] = 15
-			--AND p.[publication-date] > YYYYMMDD AND p.[publication-date] <= YYYYMMDD
-			--AND p.[publication-date] > 20200101 AND p.[publication-date] <= 20200131
+			--AND p.[publication-date] >= YYYYMMDD AND p.[publication-date] <= YYYYMMDD
+			--AND p.[publication-date] >= 20200101 AND p.[publication-date] <= 20200131
 			--AND p.[ISSN] IN ('1538-3598', '2574-3805', '2380-6591' ) 
 			--AND u.[Is Current Staff] = 1
 			--AND u.[Is Academic] = 1
