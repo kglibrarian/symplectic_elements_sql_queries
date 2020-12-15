@@ -1,8 +1,7 @@
-# Claimed Author IDs Report by Group of Authors WITH PMCIDs
+# Data Source Publication IDs Report by Group of Authors
 
-## COLUMN HEADERS:
-Elements Group ID|Elements User ID|Elements User ID|Name|Position|Department|School|Employee ID|Net ID|Elements User ID	Any Claimed IDs? 1 - yes, NULL -no|Claimed WoS Researchers ID|Claimed ORCID|Claimed Scopus Author ID|Claimed Email 
-
+## COLUMN HEADERS: 
+Elements Group ID|Elements User ID|Name|Position|Department|School|Employee ID|Net ID|Elements Publication ID|Date Published|DOI|ISSN|Document Sub-Type|Document Type|Scopus Article ID|Web of Science Article ID|Crossref DOI|PubMed Article ID|Europe PubMed Central Article ID|Elements Pub ID|NIHMS ID|PMCID|PMID|PubMed ID 
 ## CODE BASE:
 ~~~sql
 
