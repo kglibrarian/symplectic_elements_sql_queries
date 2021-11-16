@@ -12,7 +12,10 @@ SELECT *
 				 ,LEFT(u.[Department],  CHARINDEX(';', u.[Department])) "True Department" 
 				 ,RIGHT(u.[Department], LEN(u.[Department]) - CHARINDEX(';', u.[Department])) "True School"
 				,u.[Proprietary ID]
-				,u.[Username]	
+				,u.[Username]
+                ,u.[Is Current Staff]
+				,u.[Is Academic]
+				,u.[Arrive Date]	
 	
 
             FROM    [Group] g
@@ -34,6 +37,9 @@ SELECT *
                     ,u.[Department] 
                     ,u.[Proprietary ID]
                     ,u.[Username]
+                    ,u.[Is Current Staff]
+				    ,u.[Is Academic]
+				    ,u.[Arrive Date]
                     ,gum.[User ID]
                     ,gum.[Group ID]
 			
