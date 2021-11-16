@@ -88,7 +88,7 @@ LEFT JOIN
              ,[9] as 'PendingORCID'
              ,[10] as 'PendingScopus' 
              ,[17] as 'PendingEmail'
-             ,[23] as 'PendingSomething'
+             ,[23] as 'PendingSSRN'
 				FROM(
 						SELECT [User ID]
 							   ,[Is Pending]
@@ -121,3 +121,6 @@ LEFT JOIN
 		 ) AS pivot_pendingtable_2
 		 
  	ON grouptable.[ID] = pivot_pendingtable_2.[User ID]
+
+     -- USER  IDENTIFER Table
+     -- SELECT * FROM [Identifier Scheme]
