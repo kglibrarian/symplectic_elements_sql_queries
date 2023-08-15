@@ -40,9 +40,10 @@ SELECT * FROM	(
          			
 			
 		WHERE  g.[name] = 'group name'
-                --g.[name] = 'Digestive Health Center'
+                -- g.[name] = 'Digestive Health Center'
+				-- g.[id] = '114'
 				-- AND u.[Is Current Staff] = 1 
-				--AND u.[Is Academic] = 1
+				-- AND u.[Is Academic] = 1
 				-- AND u.[ID] = '8886'
 
 		GROUP BY u.[ID]
@@ -56,10 +57,6 @@ SELECT * FROM	(
 			
 
 	) t
-
-	
-
-
 
 LEFT JOIN
 				
