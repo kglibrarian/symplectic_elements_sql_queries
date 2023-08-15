@@ -1,5 +1,9 @@
-use [Elements-reporting2]
+# Claimed and Pending Author IDs Report by Group of Authors
 
+## CODE BASE:
+~~~sql
+
+use [Elements-reporting2]
 
 SELECT * 
     FROM(
